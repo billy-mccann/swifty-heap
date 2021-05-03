@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E24FE52BAE32F5ACC27415C /* SwiftyHeap.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftyHeap.podspec; path = ../SwiftyHeap.podspec; sourceTree = "<group>"; };
+		1E24FE52BAE32F5ACC27415C /* SwiftyHeap.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftyHeap.podspec; path = ../SwiftyHeap.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4BF1608255B340C8E4E2E44A /* Pods-SwiftyHeap_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyHeap_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyHeap_Tests/Pods-SwiftyHeap_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SwiftyHeap_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyHeap_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,11 +40,11 @@
 		607FACE51AFB9204008FA782 /* SwiftyHeap_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyHeap_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		831A2038B37EF0BE3D39885D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		831A2038B37EF0BE3D39885D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		859EC15CC314E8C026218F10 /* Pods-SwiftyHeap_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyHeap_Tests.release.xcconfig"; path = "Target Support Files/Pods-SwiftyHeap_Tests/Pods-SwiftyHeap_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		907FB8AA51759F83E05FCBF1 /* Pods-SwiftyHeap_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyHeap_Example.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyHeap_Example/Pods-SwiftyHeap_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A0F219E58B9C8638ABB3EFC7 /* Pods_SwiftyHeap_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyHeap_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB08E8D08D54B48270700B1B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AB08E8D08D54B48270700B1B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B7270BEEE923F81D17124D66 /* Pods-SwiftyHeap_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyHeap_Example.release.xcconfig"; path = "Target Support Files/Pods-SwiftyHeap_Example/Pods-SwiftyHeap_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E2FEF79DA7F623AF2410F06D /* Pods_SwiftyHeap_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyHeap_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -156,7 +156,6 @@
 				4BF1608255B340C8E4E2E44A /* Pods-SwiftyHeap_Tests.debug.xcconfig */,
 				859EC15CC314E8C026218F10 /* Pods-SwiftyHeap_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
