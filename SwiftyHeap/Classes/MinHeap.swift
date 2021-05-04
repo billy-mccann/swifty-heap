@@ -3,38 +3,38 @@ import Foundation
 public class MinHeap<T: Comparable> {
   private var heap = [T]()
   
-  func insert(_ element: T) {
+  /** Instantiates a new MinHeap instance. */
+  public init(){}
+  
+  /** Inserts a single element of type <T> into heap. */
+  public func insert(_ element: T) {
     heap.append(element)
     let lastIndex = heap.count - 1
     heapify(lastIndex)
   }
   
-  func insert(_ elements: [T]) {
+  /** Inserts an array of elements into the heap. */
+  public func insert(_ elements: [T]) {
     for element in elements {
       self.insert(element)
     }
   }
   
-  func extractMin() -> T {
+  /** Removes and returns the minimal element of the heap. */
+  public func extractMin() -> T {
     heap.swapAt(heap.startIndex, heap.endIndex - 1)
     let result = heap.popLast()!
     downHeapify()
     return result
   }
   
-  func peekMin() -> T {
+  /** Returns the minimal element of the heap. */
+  public func peekMin() -> T {
     return heap.first!
   }
   
-  func heapSort() {
-    var startIndex = heap.count - 1
-    while startIndex > 0 {
-      heapify(startIndex)
-      startIndex -= 1
-    }
-  }
-  
-  func count() -> Int {
+  /** Returns the number of elements in the heap. */
+  public func count() -> Int {
     return heap.count
   }
   
@@ -112,10 +112,12 @@ public class MinHeap<T: Comparable> {
   }
 
   // MARK: Testing Methods
+  /** Returns true if the heap is properly formed, false otherwise. */
   func isProper() -> Bool {
     return isProperHeap(0)
   }
   
+  /** Helper function wrapped by isProper(). */
   private func isProperHeap(_ position: Int) -> Bool {
     if position >= heap.count {return true} // parent was leaf
     let leftIndex = getLeftIndex(position)

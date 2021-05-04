@@ -4,6 +4,7 @@ import Foundation
 public class MaxHeap<T: Comparable> {
   private var heap = [T]()
   
+  /** Instantiates a new MaxHeap instance. */
   public init(){}
   
   /** Inserts a single element of type <T> into heap. */
@@ -31,14 +32,6 @@ public class MaxHeap<T: Comparable> {
   /** Returns the maximal element of the heap. */
   public func peekMax() -> T {
     return heap.first!
-  }
-  
-  func heapSort() {
-    var startIndex = heap.count - 1
-    while startIndex > 0 {
-      heapify(startIndex)
-      startIndex -= 1
-    }
   }
   
   /** Returns the number of elements in the heap. */
