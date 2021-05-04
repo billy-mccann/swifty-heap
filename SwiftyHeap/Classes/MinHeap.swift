@@ -1,6 +1,6 @@
 import Foundation
 
-class MinHeap<T: Comparable> {
+public class MinHeap<T: Comparable> {
   private var heap = [T]()
   
   func insert(_ element: T) {

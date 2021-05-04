@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-SwiftyHeap provides heap data structures for the Swift programming language. MaxHeap<T> and MinHeap<T> can accept any generic class conforming to Swift's Comparable protocol.
+SwiftyHeap provides a heap data structure for the Swift programming language. MaxHeap<T> and MinHeap<T> can accept any generic class conforming to Swift's Comparable protocol.
 DESC
 
   s.homepage         = 'https://github.com/billy-mccann/swifty-heap'
@@ -26,19 +26,8 @@ DESC
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Bill McCann' => 'hyperfine262@gmail.com' }
   s.source           = { :git => 'https://github.com/billy-mccann/swifty-heap.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
   s.ios.deployment_target = '9.0'
   s.swift_versions = "5.0"
-
   s.source_files = 'SwiftyHeap/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'SwiftyHeap' => ['SwiftyHeap/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
 

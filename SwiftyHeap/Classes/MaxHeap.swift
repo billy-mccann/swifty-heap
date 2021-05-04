@@ -1,24 +1,27 @@
 import Foundation
 
-class MaxHeap<T: Comparable> {
+/** MaxHeap is a heap data structure with the recursive property that each element in the heap is greater than its children.*/
+public class MaxHeap<T: Comparable> {
   private var heap = [T]()
   
+  public init(){}
+  
   /** Inserts a single element of type <T> into heap. */
-  func insert(_ element: T) {
+  public func insert(_ element: T) {
     heap.append(element)
     let lastIndex = heap.count - 1
     heapify(lastIndex)
   }
   
   /** Inserts an array of elements into the heap. */
-  func insert(_ elements: [T]) {
+  public func insert(_ elements: [T]) {
     for element in elements {
       self.insert(element)
     }
   }
   
   /** Removes and returns the maximal element of the heap. */
-  func extractMax() -> T {
+  public func extractMax() -> T {
     heap.swapAt(heap.startIndex, heap.endIndex - 1)
     let result = heap.popLast()!
     downHeapify()
@@ -26,7 +29,7 @@ class MaxHeap<T: Comparable> {
   }
   
   /** Returns the maximal element of the heap. */
-  func peekMax() -> T {
+  public func peekMax() -> T {
     return heap.first!
   }
   
@@ -39,7 +42,7 @@ class MaxHeap<T: Comparable> {
   }
   
   /** Returns the number of elements in the heap. */
-  func count() -> Int {
+  public func count() -> Int {
     return heap.count
   }
   

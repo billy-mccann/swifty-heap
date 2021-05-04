@@ -7,9 +7,31 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```swift
+  import SwiftyHeap
+
+  // Initialize a new MinHeap instance.
+  let minHeap = MinHeap<Int>()
+  
+  // Inserting a single element:
+  minHeap.insert(9) // inserts "9" into the heap
+  var count = minHeap.count() // "1"
+  var min = minHeap.peekMin() // "9"
+  
+  // Inserting an array of elements:
+  let arrayToInsert: [Int] = [2,5,4,-1,7]
+  minHeap.insert(arrayToInsert)
+  count = minHeap.count() // "6"
+  
+  // Extracting minimal element from heap:
+  min = minHeap.extractMin() // removes and returns "-1"
+  count = minHeap.count() // "5"
+  min = minHeap.peekMin() // "2"
+```
 
 ## Requirements
+
+SwiftyHeap was written for Swift 5. SwiftyHeap may or may not work with earlier versions of Swift, and has not been tested with them.
 
 ## Installation
 
@@ -22,7 +44,7 @@ pod 'SwiftyHeap'
 
 ## Author
 
-Bill McCann, hyperfine262@gmail.com
+Bill McCann
 
 ## License
 
