@@ -1,5 +1,9 @@
 import Foundation
 
+/** 
+* MinHeap is a Swift implementation of the heap data structure, with the property that each node is 
+* less than or equal to its children (recursively).
+*/
 public class MinHeap<T: Comparable> {
   private var heap = [T]()
   
